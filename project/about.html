@@ -1,0 +1,56 @@
+	<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Solutions Inc</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="Java.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body onload="displayDateAndGreeting()">
+  <div class="container">
+    <header style="background-image: url('bg.jpg');">
+      <div class="header-content">
+        <img id="logo" src="logop.png" alt="Logo">
+        <h1 class="header-title"><b>Welcome to Tech Solutions Inc.</b></h1>   
+      </div>
+    
+      <table class="nav-table header-table" border="1">
+        <tr>
+          <td><a href="frontpage.html" target="content"><img src="home.png" alt="Home"></a></td>
+          <td><a href="products.html" target="content">Products</a></td>
+          <td><a href="about.html" target="content">About Us</a></td>
+          <td><a href="contact.html" target="content">Contact Us</a></td>
+          <td class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+              <a href="repair.html" target="content">Repair Services</a>
+              <a href="maintenance.html" target="content">Maintenance and Tune-Up</a>
+              <a href="install.html" target="content">Installation Services</a>
+            </div>
+          </td>
+          <td align="center" id="currentDate" style="font-family: Arial; font-size: 15px; background-color: #ffd463; padding: 5px;"></td>
+        </tr>
+      </table>
+    </header>
+
+    <main style="background-image: url('bgheader.jpg');">
+      <p align="center"><img src="about.png" class="responsive-image" alt="About Us"></p>
+      <hr>
+      <h2 class="section-title" id="vision">VISION</h2>
+      <hr>
+      <p class="section-text">Tech Solutions Inc. aims to be at the forefront of the Consumer Electronics industry by continuously pushing the boundaries of technology and design. The company envisions a world where innovative, user-friendly, and sustainable products become an integral part of everyday life.</p>
+      <hr>
+      <h2 class="section-title" id="mission">MISSION</h2>
+      <hr>
+      <p class="section-text">The mission of Tech Solutions Inc. is to deliver exceptional products and services that cater to the diverse needs and preferences of consumers. By combining creativity, engineering excellence, and a customer-centric approach, the company strives to create products that inspire, entertain, and simplify life for people around the globe.</p>
+      <hr>
+    </main>
+
+    <footer>
+      <h3><i>Copyright: Tech Solutions Inc.@gmail.com 2019</i></h3>
+    </footer>
+  </div>
+</body>
+</html>

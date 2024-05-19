@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Solutions Inc</title>
+  <!-- Link to Google Fonts hosted via CDN -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script defer src="Java.js"></script>
+</head>
+<body onload="displayDateAndGreeting()">
+  <div class="container">
+    <header style="background-image: url('bg.jpg');">
+      <div class="header-content">
+        <img id="logo" src="logop.png" alt="Logo">
+        <h1 class="header-title"><b>Welcome to Tech Solutions Inc.</b></h1>   
+      </div>
+    
+      <table class="nav-table header-table" border="1">
+        <tr>
+          <td><a href="frontpage.html" target="content"><img src="home.png" alt="Home"></a></td>
+          <td><a href="products.html" target="content">Products</a></td>
+          <td><a href="about.html" target="content">About Us</a></td>
+          <td><a href="contact.html" target="content">Contact Us</a></td>
+          <td class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+              <a href="repair.html" target="content">Repair Services</a>
+              <a href="maintenance.html" target="content">Maintenance and Tune-Up</a>
+              <a href="install.html" target="content">Installation Services</a>
+            </div>
+          </td>
+          <td align="center" id="currentDate" style="font-family: Arial; font-size: 15px; background-color: #ffd463; padding: 5px;"></td>
+        </tr>
+      </table>
+    </header>
+
+    <main class="mySlides">
+    <div class="container">
+      <table>
+        <tr>
+          <td class="image-column"><img src="bg-contact.jpg" alt="Contact Background"></td>
+          <td class="form-column">
+            <div class="container">
+              <form id="contactForm" action="action_page.php">
+                <h1>Contact Us</h1>
+                <div class="input-control">
+                  <label for="subject">Enquiry</label>
+                  <textarea id="subject" name="subject" placeholder="Send us your Enquiry and we'll get back to you..." style="height:100px"></textarea>
+                  <div class="error"></div>
+                </div>
+                <div class="input-control">
+                  <label for="fname">Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <div class="error"></div>
+                </div>
+                <div class="input-control">
+                  <label for="class">H/P Number</label>
+                  <input type="text" id="class" name="class" placeholder="Your number..">
+                  <div class="error"></div>
+                </div>
+                <div class="input-control">
+                  <label for="track">About</label>
+                  <select id="track" name="track">
+                    <option value="">Please select</option>
+                    <option value="products">Products</option>
+                    <option value="services">Services</option>
+                    <option value="price">Price</option>
+                    <option value="others">Others</option>
+                  </select>
+                  <div class="error"></div>
+                </div>
+                <div class="input-control">
+                  <label>Gender:</label>
+                  <input type="radio" id="male" name="fav_language" value="Male">Male</input>
+                  <br>
+                  <input type="radio" id="female" name="fav_language" value="Female">Female</input>
+                  <div class="error"></div>
+              </div>              
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </main>
+
+    <footer>
+      <h3><i>Copyright: Tech Solutions Inc.@gmail.com 2019</i></h3>
+    </footer>
+  </div>
+</body>
+</html>
+
